@@ -1,12 +1,12 @@
 <project basedir="." default="build-jar" name="simplecaptcha">
     <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="1.6"/>
-    <property name="version.num" value="1.2.1" />
+    <property name="target" value="17"/>
+    <property name="version.num" value="1.2.2-jakarta" />
     <property environment="env" />
 
     <path id="simplecaptcha.classpath">
         <pathelement location="bin"/>
-        <pathelement location="${env.CATALINA_HOME}/lib/servlet-api.jar"/>
+        <pathelement location="lib/jakarta.servlet-api.jar"/>
         <pathelement location="lib/imaging.jar"/>
     </path>
 
@@ -20,7 +20,7 @@
 
     <target name="build-project" depends="init">
         <echo message="${ant.project.name}: ${ant.file}, target: ${target}"/>
-        <javac destdir="bin" includeantruntime="false" source="1.6" target="1.6">
+        <javac destdir="bin" includeantruntime="false" source="17" target="17">
             <src path="Java/src"/>
             <classpath refid="simplecaptcha.classpath"/>
         </javac>

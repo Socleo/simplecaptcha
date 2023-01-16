@@ -9,13 +9,13 @@
     <property name="ECLIPSE_HOME" value="/Applications/Eclipse/"/>
     <property name="junit.output.dir" value="junit"/>
     <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="1.6"/>
-    <property name="source" value="1.6"/>
-    <property name="version.num" value="1.2.1" />
+    <property name="target" value="1.17"/>
+    <property name="source" value="1.17"/>
+    <property name="version.num" value="1.2.1-jakarta" />
 
     <path id="SimpleCaptcha.classpath">
         <pathelement location="bin"/>
-        <pathelement location="/usr/apache-tomcat-6.0.18/lib/servlet-api.jar"/>
+        <pathelement location="lib/jakarta.servlet-api.jar"/>
         <pathelement location="lib/imaging.jar"/>
     </path>
     <target name="init">
